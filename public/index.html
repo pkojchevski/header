@@ -16,56 +16,68 @@
 <body>
     <div class="container my-5 mx-auto">
         <div class="header">
-            <div class="header__first flex flex-row bg-gray-200 py-4 px-12">
-                <div class="back flex-grow">
-                    <i class="fa fa-arrow-left text-blue-300"></i>
-                    <a href='#'><span class="text-sm mx-1">Back to ABC List</span></a>
+            <div class="header__first">
+                <div class="header-back">
+                    <span class="header-back__icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    <a href='#'><span class="header-back__text">Back to ABC List</span></a>
                 </div>
-                <div class="onboarded">
-                    <p><span class="text-sm">Onboarded:</span>
-                        <span><i class="fa fa-check-circle text-green-500"></i>
+                <div class="header-onboarded">
+                    <p><span class="header-onboarded__text">Onboarded:</span>
+                        <span class="header-onboarded__icon">
+                            <i class="fa fa-check-circle"></i>
                         </span>
                     </p>
                 </div>
             </div>
-            <div class="header__second flex flex-row bg-white-200 pt-4 px-12 text-gray-700">
-                <div class="flex-grow">
-                    <p class="text-gray-300 text-sm">
+            <div class="header__second border-b divide-gray">
+                <div class="header-left">
+                    <p class="header-left__icon">
                         <i class="fa fa-user"></i>
                         <span class="mx-1">Jackdaw</span>
                     </p>
-                    <div class="font-bold text-base">Edit ABC</div>
+                    <div class="header-left__text">Edit ABC</div>
                 </div>
-                <div class='items flex flex-row divide-x divide-gray'>
-                    <div class="items__item flex flex-row content-center items-center px-4 py-2 -m-px">
-                        <p class="item__text pr-4 text-lg font-bold uppercase">
+                <div class='header-items'>
+                    <div class="header-item hover:shadow">
+                        <p class="header-item__text">
                             ABCD
                         </p>
-                        <div class="item__icons relative">
-                            <i class="item__icons--main fa fa-life-ring fa-2x" aria-hidden="true"></i>
-                            <i class="item__icons--sub fa fa-check text-2xl text-green-500 absolute bottom-0"></i>
+                        <div class="header-item__icons ">
+                            <span class="item__icons--main">
+                                <i class=" fa fa-life-ring fa-2x" aria-hidden="true"></i>
+                            </span>
+
+                            <i class="item__icons--sub fa fa-check text-green-500" style='right:-8px'></i>
+
                         </div>
 
                     </div>
 
-                    <div class="items__item flex flex-row content-center items-center px-4 py-2 -m-px">
-                        <p class="item__text pr-4 text-lg font-bold">
+                    <div class="header-item">
+                        <p class="header-item__text">
                             Doctor
                         </p>
-                        <div class="item__icons relative">
-                            <i class="item__icons--main fa fa-user-md fa-2x" aria-hidden="true"></i>
-                            <i
-                                class="item__icons--sub fa fa-question-circle-o text-2xl text-orange-500 absolute bottom-0"></i>
+                        <div class="header-item__icons">
+                            <span class="item__icons--main">
+                                <i class="fa fa-user-md fa-2x" aria-hidden="true"></i>
+                            </span>
+                            <i class="item__icons--sub fa fa-question-circle-o text-orange-400" style='right:-8px'></i>
+
                         </div>
                     </div>
-                    <div class="items__item flex flex-row content-center items-center px-4 py-2 -m-px">
-                        <p class="item__text pr-4 text-lg font-bold">
+                    <div class="header-item">
+                        <p class="header-item__text">
                             Devices
                         </p>
-                        <div class="item__icons relative">
-                            <i class="item__icons--main fa fa-tablet fa-2x"></i>
-                            <i
-                                class="item__icons--sub fa fa-check-circle text-2xl text-green-500 absolute bottom-0"></i>
+                        <div class="header-item__icons">
+                            <span class="item__icons--main">
+                                <i class="fa fa-tablet fa-2x"></i>
+                            </span>
+
+                            <i class="item__icons--sub fa fa-check-circle text-green-500" style='right:-8px'></i>
+
                         </div>
                     </div>
                 </div>

@@ -2,4 +2,70 @@
 
 @tailwind components;
 
+.header__first {
+    @apply flex flex-row bg-gray-200 py-4 px-12
+
+}
+.header-back {
+    @apply flex-grow
+}
+.header-back__icon {
+   @apply text-blue-300
+}
+
+.header-back__text {
+    @apply text-sm mx-1 text-blue-700 underline
+}
+
+.header-onboarded__text {
+    @apply text-sm
+}
+
+.header-onboarded__icon {
+    @apply text-green-500
+}
+
+.header__second {
+    @apply flex flex-row pt-4 px-12 text-gray-700
+}
+
+.header-left {
+    @apply flex-grow
+}
+
+.header-left__icon {
+    @apply text-gray-300 text-sm
+}
+
+.header-left__text {
+    @apply font-bold text-base
+}
+
+.header-items {
+    @apply flex flex-row border-l
+}
+
+.header-item {
+    @apply flex flex-row content-center items-center px-4 py-2 -m-px border-r border-t cursor-pointer 
+}
+.header-item__text {
+   @apply pr-4 text-lg font-light text-gray-500 
+}
+.header-item__icons {
+@apply relative
+}
+
+.item__icons--main {
+    @apply font-light text-gray-500 
+}
+
+.item__icons--sub {
+    @apply absolute bottom-0 text-2xl bg-white rounded-full
+}
+
+
 @tailwind utilities;
+
+/* .custom-shadow {
+    box-shadow: inset 0 -5px 0 #b5b7b9; 
+} */

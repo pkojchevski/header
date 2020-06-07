@@ -1,8 +1,10 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+
   },
-  variants: {},
+  variants: {
+    pointerEvents: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
